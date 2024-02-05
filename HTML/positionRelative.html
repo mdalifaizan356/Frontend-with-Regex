@@ -1,0 +1,47 @@
+<!--
+**************************************Position*******************************************
+static   By default 
+relative khud  ki position k according action leta he
+absolute  khud k parent div k according action leta he
+fixed     body k relative chalta he. position fixed ho jati he
+sticky   
+text-align: justify
+chnage syntax margin-top to only top
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* .container{
+            background-color: aqua;
+            border: 2px solid blue;
+            height: 200px;
+            width: 50%;      
+        } */
+        .box{
+            width: 25%;
+            height: 200PX;
+            border: 3px solid goldenrod;
+            background-color: brown;
+            text-align: center;
+            display:inline-block;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+        <div class="box">1</div>
+        <div class="box" style="top:50px; left:50px; z-index:1 ">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+</body>
+</html>
