@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 50%;
+            height: 700px;
+            border: 2px solid yellow;
+            background-color: white;
+            position: relative;
+            margin: auto;
+            top: 20px;
+            border-radius: 20px;
+        }
+        .wrapLogin{
+            border: 2px solid yellow;
+            position: absolute;
+            height: 650px;
+            width: 100%;
+            top: 40px;
+            font-size: 20px;
+            text-align: center;
+            font-family:Poppins-Regular, sans-serif;;
+        }
+        .wrapLogin button{
+            height: 90px;
+            width: 38%;
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+        }
+        .Fbutton{
+            background-color: #316FF6;
+        }
+        .Gbutton{
+            background-color:white;
+        }
+        .wrapLogin form{
+            margin-top: 130px;
+            display: block;
+            text-align: left;
+            position: relative;
+        }
+        .wrapLogin label{
+            width: 100%;
+            font-size: 25px;
+            margin-left: 40px;
+            top: px;
+        }
+        .wrapLogin input{
+            display: block;
+            width: 90%;
+            height: 70px;
+            margin: auto;
+            border-color:red;
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body style="background-color:coral;">
+    <div class="container">
+        <div class="wrapLogin">
+            <h1>Sign In With</h1>
+            <button class="Fbutton">Facebook</button>
+            <button class="Gbutton">Google</button>
+            
+                <form method="post">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="Username">
+                    <label for="username">Password</label>
+                    <input type="text" placeholder="Username">
+                </form>
+        </div>
+    </div>
+</body>
+</html>
