@@ -8,22 +8,77 @@
         *{
             margin: 0;
             padding: 0;
+            font-style: sans-serif;
             box-sizing: border-box;
         }
         body{
+            width: 100%;
             background-color: black;
-            font-style: sans-serif;
         }
         .container{
             width: 60%;
             height: 50vh;
             margin: auto;
             margin-top: 150px;
-            background-color: white;
+            background-color:#341f97;
+            border-radius: 10px;
+            display: flex;
+            box-shadow: 10px 10px 200px #341f97 ;
+        }
+        .img{
+            width: 50%;
+            height:50vh;
+        }
+        .img img{
+            width: 100%;
+            height:50vh;
+            border-radius: 360px;
+            box-shadow: 5px 5px 3px black ;
+        }
+        .aboutus-wrap{
+            width: 80%;
+            height:50vh;
+            text-align: center;
+            text-align: justify;
+            background-color: aliceblue;
+        }
+        .aboutus{
+            width: 90%;
+            height:50vh;
+            margin: auto;
+            text-align: center;
+            text-align: justify;
+        }
+        .aboutus h3{
+            margin-top:20px ;
+            font-size: 30px;
+            text-align: center;
+        }
+        .aboutus p{
+            margin-top:20px ;
+            color:black;
         }
     </style>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
+        <div class="img">
+            <img src="../Media/mypic.jpg" alt="My picture">
+        </div>
+        <div class="aboutus-wrap">
+            <div class="aboutus">
+                <h3>I am Full Stack Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus possimus porro, 
+                est consequuntur amet illum. Eum molestias animi pariatur repudiandae quis odio 
+                ducimus ex, perferendis labore error quia omnis hic. Et animi pariatur dolores ipsa, 
+                reiciendis incidunt ratione sequi, iusto soluta, quaerat voluptatibus quibusdam omnis
+                obcaecati ea excepturi. Perferendis expedita eaque numquam error non ut adipisci ad ipsum
+                nulla quia praesentium quos, magnam hic recusandae iste asperiores obcaecati quibusdam
+                odit molestiae, totam corporis optio, officia officiis esse? Deserunt cum tenetur velit
+                sed! Inventore deleniti dolores voluptatum vero consequuntur, asperiores nostrum.</p>
+                <button>Contact Me</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
