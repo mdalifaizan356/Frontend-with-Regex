@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+            height: 100vh;
+            margin: auto;
+            background-color:antiquewhite;
+            position: relative;
+            border: 2px solid pink;
+            position: relative;
+        }
+        .part1{
+            width: 100%;
+            height: 20vh;
+            background-color:orange;
+            position: relative;
+        }
+        .part2{
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            display: flex;
+            
+        }
+        .part3{
+            width: 100%;
+            height: 20vh;
+            background-color: green;
+            position: relative;
+            display: flex;
+        }
+
+        #div1{
+            width: 100%;
+            height: 20vh;
+            background-color: deeppink;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        #div2{
+            width: 30%;
+            height: 60vh;
+            background-color:orange;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        #div3{
+            width: 70%;
+            height: 60vh;
+            background-color: gray;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        #subdiv1{
+            width: 100%;
+            height: 20vh;
+            background-color: brown;
+
+        }
+        #subdiv2{
+            width: 100%;
+            height: 40vh;
+            background-color: deeppink;
+        }
+        #subdiv3{
+            width: 60%;
+            height: 40vh;
+            background-color: darkkhaki;
+        }
+        #subdiv4{
+            width: 100%;
+            height: 40vh;
+            background-color:orange;
+        }
+        #subdiv5{
+            width: 30%;
+            height: 40vh;
+            background-color:black;
+        }
+        #div8{
+            width: 75%;
+            height: 20vh;
+            background-color: blue;
+            text-align: center;
+            border: 1px solid gray;
+        }
+        #div9{
+            width: 25%;
+            height: 20vh;
+            background-color:darkkhaki;
+            text-align: center;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="part1">
+            <div id="div1">1</div>
+        </div>
+
+        <div class="part2">
+            <div id="div2">
+                <div id="subdiv1">2</div>
+                <div id="subdiv2">5</div>
+            </div>
+            <div id="div3">
+                <div id="subdiv3">3</div>
+                <div id="subdiv4">7</div>
+                <div id="subdiv5"></div>
+            </div>
+        </div>
+
+        <div class="part3">
+            <div id="div8">8</div>
+            <div id="div9">9</div>
+        </div>
+    </div>
+</body>
+</html>
