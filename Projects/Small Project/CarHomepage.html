@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            background-image: url(/Media/carbi5.jpg);
+            /* background: fixed; */
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+        }
+        .header{
+            width: 100%;
+            height: 15vh;
+            background-color:white;
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            color: antiquewhite;
+            background-color: black;
+        }
+        .content{
+            width: 100%;
+            height: 85vh;
+            color:black;
+            text-align: center;
+            position: fixed;
+            top: 250px;
+            left: 50px;
+        }
+        .content p{
+            width: 30%;
+            margin: auto;
+
+        }
+        .logo{
+            font-family:serif;
+        }
+        .header ul{
+            display: flex;
+        }
+        .header ul li{
+            list-style: none;
+            padding: 10px;
+        }
+        .logo{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 class="logo">CARVILLA</h1>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Featured Cars</li>
+            <li>New Cars</li>
+            <li>Brands</li>
+            <li>Contact</li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="banner-text">
+                <h1>GET YOUR CAR IN RESONABLE PRICE</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores voluptatibus
+                   laborum, sapiente corporis eveniet fugit, etc.
+                </p>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
