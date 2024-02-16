@@ -3,70 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Layout 1</title>
+    <title>Layout 1</title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        header{
+        .header{
+            background-color: skyblue;
+            /* border: 2px solid red; */
             width: 100%;
-            height: 150px;
-            background-color: aqua;
-            position: relative;
+            height:10vh;
         }
-        .content{
-            background-color: gray;
+        .main{
+            background-color: white;
+            /* border: 2px solid red; */
+            width: 50%;
+            height:80vh;
+            margin: auto;
+        }
+        #innerdiv1{
+            /* border: 2px solid yellow; */
             width: 100%;
-            height: 350px;
-            border: 2px solid red;
-            position: relative;
-            top: 150;
+            height: 40vh;
             display: flex;
-            justify-content: center;
-
         }
-        #main-content{
-              background-color: green;
-              height: 200px;
-              width: 500px;
-        }
-        #sidebar{
-              background-color:red;
-              height: 200px;
-              width: 200px;
-              display: block;
-        }
-        #twin1{
-              background-color:orange;
-              height: 200px;
-              width: 200px;
-        }
-        #twin2{
-              background-color:orange;
-              height: 200px;
-              width: 200px;
-              flex-wrap: nowrap;
-        }
-
-        footer{
+        #innerdiv2{
+            /* border: 2px solid yellow; */
             width: 100%;
-            height: 150px;
-            background-color: aqua;
-            position: absolute;
-            bottom: 0;
+            height: 40vh;
+            display: flex;
+        }
+        .main-content{
+            width: 70%;
+            height: 40vh;
+            background-color: green;
+        }
+        .sidebar{
+            width: 30%;
+            height: 40vh;
+            background-color: purple;
+            border: 1px solid white;
+
+            
+        }
+        .twin{
+            width: 50%;
+            height: 40vh;
+            background-color: orange;
+            border: 1px solid white;
+        }
+
+
+        .footer{
+            background-color:blue;
+            /* border: 2px solid red; */
+            width: 100%;
+            height:10vh;
         }
     </style>
 </head>
 <body>
-    <header></header>
-    <div class="content">
-        <div id="main-content"></div>
-        <div id="sidebar"></div>
-        <div id="twin1"></div>
-        <div id="twin2"></div>
+    <div class="header">header</div>
+    <div class="main">
+        <div id="innerdiv1">
+            <div class="main-content">main-content</div>
+            <div class="sidebar">sidebar</div>
+        </div>
+        <div id="innerdiv2">
+            <div class="twin">twin</div>
+            <div class="twin">twin</div>
+        </div>
     </div>
-    <footer></footer>
+    <div class="footer">footer</div>
 </body>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Google</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+        .content{
+            width: 100%;
+            height: 100vh;
+            /* background-color: brown; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:center;
+            border: 2px solid red;
+            padding: 50px;
+        }
+        .logo{
+            width: 50%;
+            border: 2px solid red;
+            text-align: center;
+        }
+        
+        
+        .searchbar{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            border: 2px solid gray;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .searchbar input{
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+        .searchbar i{
+            padding: 10px;
+            /* border: 2px solid blue; */
+            text-align: center;
+            font-size:25px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="/Media/google_logo.svg" alt="google.com">
+        </div>
+        <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Search Google or type a URL">
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-regular fa-image"></i>
+        </div>
+        <div class="shortcut"></div>
+    </div>
+</body>
+</html>
