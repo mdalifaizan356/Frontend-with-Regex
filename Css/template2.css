@@ -2,28 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-}
-.container{
-    /* border: 2px solid red; */
-    width:100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-
+    font-family: sans-serif;
 }
 .sidebar{
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     width:22%;
     height: 100vh;
-    position: fixed;
+    position: fixed;    
 }
-.main{
-    border: 2px solid blue;
-    width:78%;
-    position: absolute;
-    right: 0;
-}
-
 .sidebarcontent{
     /* border: 2px solid red; */
     width: 90%;
@@ -51,29 +37,153 @@
     color:gray
 }
 .icon-nav{
-    border: 2px solid pink;
+    /* border:  2px solid pink; */
     width: 100%;
-    height: 120px;
-    padding: 2px;
+    height: 130px;
     margin-top:10px;
-    display: flex; 
-    flex-direction:column ;      
 }
-.icon-nav button:hover{
+.navigation{
+    /* border:2px solid red; */
+    width: 100%;
+    height: 42px;
     display: flex;
-    flex-direction: column;
-    padding:10px;
-    width:100%;
-    height: 10px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+.navigation:hover{
+    background-color: lightgray;
+    
+}
+.navigation i{
+    /* border: 2px solid yellow; */
+    width: 10%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.navigation p{
+    /* border: 2px solid yellow; */
+    width: 90%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    font-size: 15px;
+    margin-top: -3px;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
 }
 .social-link{
     /* border: 2px solid green; */
     width: 100%;
     height: 40px;
-    margin-top: 10px;
+    padding-right: 4px;
+    font-size: medium;
+    /* margin-top: 10px; */
 }
 .social-link i{
     padding:1px;
     size: 20px;
-    font-weight: bolder;
+}
+
+/* CSS for main div  */
+.main{
+    /* border: 2px solid green; */
+    background-color: #f1f1f1!important;
+    width: 78%;
+    height: auto;
+    position: absolute;
+    left: 22%;
+}
+.main-heading{
+    margin: 10px;
+    font-size: large;
+}
+.filter{
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size:medium;
+    display: flex;
+    align-items: center;
+}
+
+.filter a{
+    text-align: center;
+    border: 0px solid transparent;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    font-size:large;
+    margin-left:10px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+.filter a:hover{
+    background-color: lightgray;
+}
+.line{
+    height: 5px;
+    width: 98%;
+    margin: auto;
+    margin-top:25px;
+    background-color: lightgray;
+}
+.galary{
+    /* border: 2px solid red; */
+    width: 98%;
+    margin: auto;
+    margin-top:10px ;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.project{
+    /* border: 2px solid red; */
+    width: 32%;
+    /* margin: auto; */
+    height: 52vh;
+    margin-top: 10px;
+}
+.project-img{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 32vh;
+}
+.project-img img{
+    width:100%;
+    height:32vh;
+}
+.project-desc{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 20vh;
+    
+}
+.project-desc h4{
+    /* border: 2px solid yellow; */
+    padding: 10px;
+}
+.project-desc p{
+    /* border: 2px solid yellow; */
+    padding: 10px;
+}
+.project-nav{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
