@@ -4,16 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana,sans-serif;    
 }
-
-
-.header{
-    height: 10vh;
-    width: 100%;
-    /* border: 2px solid red; */
-    position: fixed;
-    background-color: white;
-}
-.backimg{
+.cover-img{
     height: 110vh;
     /* border: 2px solid blue; */
     background-image: url(	https://www.w3schools.com/w3images/architect.jpg);
@@ -24,156 +15,106 @@
     align-items: center;
     justify-items: center;
 }
-.mid{
+.header{
+    /* border: 2px solid red; */
+    box-shadow: 0px 2px 5px gray;
     height: 10vh;
-    width: 30vw;
-    /* border: 2px solid black; */
+    width: 100%;
+    position: fixed;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.br{
-    height: 95%;
-    width:6vw;
-    border: 2px solid red;
-    color: white;
-    /* background-color: #000; */
+.logo a{
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 5px;
+}
+.nav a{
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+    letter-spacing: 5px;
+}
+.banner-name{
+    /* border: 2px solid red; */
+    width: 20%;
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    /* justify-content:space-around ; */
+    align-items:center;
+    color:white;
+}
+.banner-name p:nth-child(1){
+    margin-top: 30px;
+    width: 30%;
+    background-color: black;
     opacity: 0.75;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: xx-large;
+    padding:8px 16px;
 }
-.architect{
-    height: 95%;
-    width:80%;
-    /* border:2px solid white; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
-    color: white;
-}
-
-.Projects-heading{
-    /* border: 2px solid red; */
-    height: 20vh;
-    display: flex;
-    align-items: center;
-}
-.Projects-content{
-    /* border: 2px solid yellow; */
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-}
-.project_img{
-    width:23%;
-    height: 40%;
+.banner-name p:nth-child(2){
     margin-top: 30px;
+    width: 70%;
+    opacity: 0.75;
+    display: flex;
+    font-size: xx-large;
+    padding:8px 16px;
+}
+.heading p{
     /* border: 2px solid red; */
-    color: white;
-}
-.Projects-content :nth-child(1){
-    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(2){
-    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(3){
-    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(4){
-    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(5){
-    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(6){
-    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(7){
-    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(8){
-    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.about-heading{
-    /* border: 2px solid red; */
+    width: 96%;
+    margin: auto;
     height: 20vh;
     display: flex;
+    /* justify-content: center; */
     align-items: center;
+    font-size: larger;
 }
-.about-para{
+.hr-line{
+    width: 96%;
+    margin: auto;
+    height: 1px;
+    background-color: gray;
+    margin-bottom: 10px;
+    opacity: 0.75;
+}
+.project-img{
     /* border: 2px solid red; */
-    height: 20vh;
+    width: 96%;
+    margin: auto;
+    /* height: 100vh; */
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.architecture-container{
-    /* border: 2px solid red; */
-    width:100%;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
+.img-box{
+    /* border: 2px solid green; */
+    width: 23.8%;
+    /* height: 48vh; */
+    position: relative;
+    margin-top:1%;
 }
-.architecture-details{
-    /* border: 2px solid yellow; */
-    width:24%;
-    height: 79vh;
-}
-.architecture-img{
-    /* border: 2px solid red; */
+.img-box img{
+    /* border: 2px solid green; */
     width: 100%;
-    height:30vh ;
+    /* height: 48vh; */
 }
-.architecture-img img{
-    width: 100%;
-    height: 29vh;
-    filter: grayscale(80%);
-}
-.architecture-info{
+.img-heading{
     /* border: 2px solid blue; */
-}
-.architecture-info h3,h2, p{
-    padding: 20px;
-}
-.architecture-info button{
-    width: 100%;
-    padding: 5%;
-    border: 1px solid transparent;
-
-}
-.contact-container{
-    border: 2px solid green;
-    width: 100%;
-    height: 80vh;
-}
-footer{
-    border: 2px solid yellow;
-    width: 100%;
-    height: 15vh;
+    width: auto;
+    padding: 2px;
+    height: 15%;
     background-color: black;
-    color: wheat;
+    color: white;
+    position: absolute;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
