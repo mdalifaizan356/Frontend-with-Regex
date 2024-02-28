@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 20%;
+            width: 10%;
+            background-color:black;
+            animation-name: box-movement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            color: white;
+
+
+        }
+        /* @keyframes box1 {
+            from{
+                width: 0px;
+                height: 0px;
+                left: 0;
+                border-radius: 2px;
+            }
+            to{
+                width: 50%;
+                height: 50vh;
+                border-radius: 5%;
+                background-color: Blue;
+            }
+        }
+        .box2{
+            height: 50%;
+            width: 50%;
+            background-color:yellow;
+            animation-name: cba;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        @keyframes cba {
+            from{
+                width: 0px;
+                height: 0px;
+                border-radius: 2px;
+            }
+            to{
+                width: 50%;
+                height: 50vh;
+                border-radius: 5%;
+                background-color: red;
+            }
+        } */
+        @keyframes box-movement {
+            0%{
+                left:0px;
+                top:0px;
+                content: attr();
+            }
+            20%{
+                left:50%;
+                top:0%;
+                box-shadow: 20px 20px 10px --0;
+                
+            }
+            40%{
+                left:50%;
+                top:50%;
+                box-shadow: 20px 20px 10px yellow;
+            }
+            60%{
+                left:95%;
+                top:50%;
+                box-shadow: 20px 20px 10px blue;
+            }
+            80%{
+                left:0%;
+                top:50%;
+                box-shadow: 20px 20px 10px green;
+            }
+            100%{
+                left:0%;
+                top:0%;
+                box-shadow: 20px 20px 10px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1></h1>
+    </div>
+</body>
+</html>

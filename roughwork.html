@@ -3,272 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../Css/template1.css">
-    <title>Template1</title>
+    <title>Document</title>
     <style>
         *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana,sans-serif;    
-}
-
-
-.header{
-    height: 10vh;
-    width: 100%;
-    /* border: 2px solid red; */
-    position: fixed;
-    background-color: white;
-}
-.backimg{
-    height: 110vh;
-    /* border: 2px solid blue; */
-    background-image: url(	https://www.w3schools.com/w3images/architect.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-.mid{
-    height: 10vh;
-    width: 30vw;
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.br{
-    height: 95%;
-    width:6vw;
-    border: 2px solid red;
-    color: white;
-    /* background-color: #000; */
-    opacity: 0.75;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.architect{
-    height: 95%;
-    width:80%;
-    /* border:2px solid white; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
-    color: white;
-}
-
-.Projects-heading{
-    /* border: 2px solid red; */
-    height: 20vh;
-    display: flex;
-    align-items: center;
-}
-.Projects-content{
-    /* border: 2px solid yellow; */
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap:wrap;
-}
-.project_img{
-    width:23%;
-    height: 40%;
-    margin-top: 30px;
-    /* border: 2px solid red; */
-    color: white;
-}
-.Projects-content :nth-child(1){
-    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(2){
-    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(3){
-    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(4){
-    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(5){
-    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(6){
-    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(7){
-    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.Projects-content :nth-child(8){
-    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.about-heading{
-    /* border: 2px solid red; */
-    height: 20vh;
-    display: flex;
-    align-items: center;
-}
-.about-para{
-    /* border: 2px solid red; */
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.architecture-container{
-    /* border: 2px solid red; */
-    width:100%;
-    height: 80vh;
-    display: flex;
-    justify-content: space-evenly;
-}
-.architecture-details{
-    /* border: 2px solid yellow; */
-    width:24%;
-    height: 79vh;
-}
-.architecture-img{
-    /* border: 2px solid red; */
-    width: 100%;
-    height:30vh ;
-}
-.architecture-img img{
-    width: 100%;
-    height: 29vh;
-    filter: grayscale(80%);
-}
-.architecture-info{
-    /* border: 2px solid blue; */
-}
-.architecture-info h3,h2, p{
-    padding: 20px;
-}
-.architecture-info button{
-    width: 100%;
-    padding: 5%;
-    border: 1px solid transparent;
-
-}
-.contact-container{
-    border: 2px solid green;
-    width: 100%;
-    height: 80vh;
-}
-footer{
-    border: 2px solid yellow;
-    width: 100%;
-    height: 15vh;
-    background-color: black;
-    color: wheat;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul {
+            border: 2px solid red;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+                border: 2px solid green;
+                a {
+                    padding: 2% 4%;
+                    border: 1px solid yellow;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+        }
     </style>
 </head>
 <body>
-   <div class="header">
-
-   </div>
-   <div class="backimg">
-    <div class="mid">
-        <div class="br">
-        <h1>BR</h1>
-        </div>
-        <div class="architect">
-            <h4>Architects</h4>
-        </div>
-    </div>
-   </div>
-   <div class="Projects-heading">Projets</div>
-   <div class="Projects-content">
-        <div class="project_img"><p>Summer House</p></div>
-        <div class="project_img">Brick Househ</div>
-        <div class="project_img"><p>Renovated</p></div>
-        <div class="project_img"><p>Barn House</p></div>
-        <div class="project_img"><p>Summer House</p></div>
-        <div class="project_img"><p>Brick Househ</p></div>
-        <div class="project_img"><p>Renovated</p></div>
-        <div class="project_img"><p>Barn House</p></div>
-   </div>
-   <div class="about-heading">About</div>
-   <hr>
-   <div class="about-para">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tenetur pariatur deserunt ea et! Et est debitis eos, officia modi quaerat tenetur magnam nemo mollitia sapiente ipsam iure fuga cumque exercitationem odio sit rerum vitae laudantium? Necessitatibus minima nesciunt incidunt eos. Magnam at, pariatur, tempora amet a veniam debitis sequi recusandae eius consequatur nesciunt hic ea dicta nam quam natus qui! Ab incidunt perferendis quod expedita iste nulla delectus at amet a enim inventore alias nihil exercitationem praesentium, consequatur mollitia quos. Suscipit quidem quis excepturi inventore sint eaque dicta dolorum, provident neque, saepe repellat laborum reprehenderit voluptatem tempore, natus vitae!
-   </div>
-   <div class="architecture-container">
-    <div class="architecture-details">
-        <div class="architecture-img">
-            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
-        </div>
-        <div class="architecture-info">
-            <h3>John Doe</h3>
-            <h2>CEO & Founder</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quod.dolor sit amet consectetur.</p>
-            <button>Contact</button>
-        </div>
-    </div>
-    <div class="architecture-details">
-        <div class="architecture-img">
-            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="">
-        </div>
-        <div class="architecture-info">
-            <h3>John Doe</h3>
-            <h2>CEO & Founder</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quod.dolor sit amet consectetur.</p>
-            <button>Contact</button>
-        </div>
-    </div>
-    <div class="architecture-details">
-        <div class="architecture-img">
-            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
-        </div>
-        <div class="architecture-info">
-            <h3>John Doe</h3>
-            <h2>CEO & Founder</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quod.dolor sit amet consectetur.</p>
-            <button>Contact</button>
-        </div>   
-    </div>
-    <div class="architecture-details">
-        <div class="architecture-img">
-            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
-        </div>
-        <div class="architecture-info">
-            <h3>John Doe</h3>
-            <h2>CEO & Founder</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quod.dolor sit amet consectetur.</p>
-            <button>Contact</button>
-        </div>
-    </div>
-   </div>
-   <div class="contact-container"></div>
-   <div class="map-img">
-    <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
-   </div>
-   <footer>
-        <h4>Powered By <u>w3.css</u></h4>
-   </footer>
+    <ul>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+    </ul>
 </body>
 </html>
