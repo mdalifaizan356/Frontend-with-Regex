@@ -114,16 +114,25 @@ html{
     flex-direction: column;
     justify-content: space-between;
 }
-.nav-Container{
+.nav-Container ul{
+    list-style: none;
     /* border: 2px solid blue; */
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     background-color: white;
     /* overflow:scroll; */
     margin-bottom: 15px;
 }
+.nav-Container ul li{
+    list-style: none;
+}
+.nav-Container a{
+    text-decoration: none;
+    color: black;
+}
+
 .nav-card{
     /* border: 2px solid red; */
     display: flex;
@@ -134,26 +143,101 @@ html{
     padding: 15px;
     font-size: 1em;    
 }
-.nav-card :hover{
-    cursor: pointer;
-}
-.n-card-img{
+/* .n-card-img{
     border: 2px solid black;
-}
+} */
 .n-card-detail{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     font-size: smaller;
 }
-.nav-list{
-    border: 2px green;
+/* .nav-list-Container{
+    border: 2px solid  green;
     display: flex;
+    flex-direction:column ;
 }
-.list{
+.nav-list{
+    display: flex;
+    flex-direction:column ;
+}
+.nav-sublist{
     display: flex;
     flex-direction: column;
+} */
+
+.slider-Container{
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.img-slider{
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.img-slider figure{
+    width: 100%;
+    position: relative;
+    animation: 10s slider infinite;
+    display: flex;
+}
+.img-slider figure img{
+    float: left;
+    width: 100%;
+}
+@keyframes slider{
+    0%{
+        left: 50;
+    }
+    25%{
+        left: 50;
+    }
+    50%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+    
+}
+
+#left-button{
+    position: absolute;
+    z-index: 2;
+    width: 3%;
+    height: 40%;
+    border: 2px solid white;
+}
+#right-button{
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    width: 3%;
+    height: 40%;
+    border: 2px solid white;
+}
+
+.offer-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
     justify-content: space-between;
 }
-.sublist{
-    display: flex;
-    flex-direction: column;
+.img-box{
+    /* border: 2px solid yellow; */
+    width: 35.5%;
+    margin: 5px;
+}
+.img-box img{
+    /* border: 2px solid yellow; */
+    width: 100%;
 }
