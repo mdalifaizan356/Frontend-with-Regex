@@ -241,3 +241,147 @@ html{
     /* border: 2px solid yellow; */
     width: 100%;
 }
+
+.deals-container{
+    /* border: 2px solid red; */
+    background-color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+.deals-headbox{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+.deals-headbox p{
+    font-size:large ;
+    font-weight: bold;
+}
+.deals-headbox button{
+    font-size:large ;
+    font-weight: bold;
+    width: 30px;
+    border: 2px solid blue;
+    border-radius: 360px;
+    background-color: blue;
+    color: white;
+}
+.deals-contentbox{
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 15px;
+}
+.card-container{
+    /* border: 2px solid black; */
+    width:  100%;
+    /* height: 50vh; */
+    display: flex;
+    /* justify-content:space-between; */
+    position: relative;
+    flex-wrap: wrap;
+}
+.card{
+    border: 1px solid gray;
+    width: 20%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+.card-img{
+    /* border: 1px solid yellow; */
+    width: 90%;
+    /* height: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.card-img img{
+    width: 80%;
+    /* height: 100%; */
+    object-fit:contain;
+}
+.card-info{
+    /* border: 1px solid yellow; */
+    width: 90%;
+    /* height: 50%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.deals-left-button{
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    width: 3%;
+    height: 40%;
+    border: 2px solid white;
+    background-color: white;
+}
+.deals-right-button{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    z-index: 2;
+    width: 3%;
+    height: 40%;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.banners-container{
+    width: 100%;
+    /* border: 2px solid red; */
+    /* height: 50vh; */
+    margin-top: 15px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.product-banner{
+    /* border: 2px solid white; */
+    width: 33.3%;
+    /* margin: 2px; */
+    margin-bottom: 5px;
+}
+.product-banner img{
+    width: 100%;
+    border-left:3px solid white;
+    border-right:3px solid white;
+}
+.MLG-Offer-banner-Container{
+    border: 2px solid green;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    height: 100vh;
+}
+.MLG{
+    border: 2px solid yellow;
+    width: 40%;
+    height: 90vh;
+    background-color: white;
+}
+.Offer-banner{
+    border: 2px solid yellow;
+    width: 60%;
+    height: 90vh;
+}
+.Offer-banner-img{
+    border: 2px solid red;
+    width: 10%;
+    /* height: 90vh; */
+}
+.Offer-banner-img img{
+    border: 2px solid red;
+    width: 50px;
+    height: 200px;
+
+}
+.tag-container{
+    border: 2px solid red;
+    width: 100;
+    height: 100vh;
+}
