@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 html{
     font-size: 16px;
@@ -217,25 +221,29 @@ html{
     width: 100%;
 }
 .scrlbl-container{
-    border: 2px solid red;
-    width: 80%;
+    /* border: 2px solid red; */
+    width: 85%;
     background-color: white;
+    
 }
 .scrlbl-container-head{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
     justify-content: space-between;
 }
 .scrlbl-cards-container{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     display: flex;
-    justify-content: space-evenly;
-
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
 }
 .card1{
     border: 2px solid yellow;
     text-decoration: none;
     color: black;
+    margin: 5px;
+    padding: 10px;
 }
 .card-img{
     display: flex;
@@ -243,11 +251,17 @@ html{
     align-items: center;
 }
 .card-img img{
-    width: 50%;
+    width: 80%;
 }
 .card-desc{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+}
+.card2{
+    width: 40%;
+    border: 2px solid red;
+    color: black;
+    margin: 5px;
+    padding: 0px;
 }
