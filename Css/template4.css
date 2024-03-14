@@ -220,18 +220,20 @@ html{
     /* border: 2px solid red; */
     width: 100%;
 }
-.scrlbl-container{
-    /* border: 2px solid red; */
+
+.scroll-box{
+    border: 2px solid red;
     width: 85%;
     background-color: white;
+    margin-top: 1em;
     
 }
-.scrlbl-container-head{
+.scroll-box-head{
     /* border: 2px solid green; */
     display: flex;
     justify-content: space-between;
 }
-.scrlbl-cards-container{
+.scroll-box-cards{
     /* border: 2px solid green; */
     display: flex;
     overflow-x: scroll;
@@ -239,8 +241,9 @@ html{
     white-space: nowrap;
 }
 .card1{
-    border: 2px solid yellow;
+    border: 2px solid lightgrey;
     text-decoration: none;
+    width: 100%;
     color: black;
     margin: 5px;
     padding: 10px;
@@ -259,9 +262,20 @@ html{
     align-items: center;
 }
 .card2{
-    width: 40%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: black;
-    margin: 5px;
-    padding: 0px;
+    background-color: white;
+    /* margin-left: 10px; */
+    padding: 5px;
+}
+.img-container{
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.img-container img{
+    width: 30%;
+    margin: 10px;
+
 }
