@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assgnment1</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder="Enter 1st Number">
+    <input type="text"  id="inp2" placeholder="Enter 2nd Number">
+    <select name="" id="opration">
+        <option value="Addition">Addition</option>
+        <option value="Subtraction">Subtraction</option>
+        <option value="Multiplication">Multiplication</option>
+        <option value="Division">Division</option>
+    </select>
+
+    <h3 id="h" style="position: relative; top: 20px;"></h3>
+    <!-- <button id="btn"></button> -->
+
+    <script>
+        document.getElementById("opration").onclick=function(){
+            // function calculate(){
+            let a = Number(document.getElementById("inp1").value);
+            let b = Number(document.getElementById("inp2").value);
+            let opration =document.getElementById("opration").value;
+            let result;
+
+            if(opration === "Addition"){
+                result = a + b;
+            }
+            else if(opration === "Subtraction"){
+                result = a - b;
+            }
+            else if(opration === "Multiplication"){
+                result = a * b;
+            }
+            else if(opration === "Division"){
+                result = a % b;
+            }
+            document.getElementById("h").innerText = opration + " of your numbers: " + result;
+        }
+    </script>
+</body>
+</html>
