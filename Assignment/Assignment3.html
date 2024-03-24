@@ -19,15 +19,18 @@
             height: 60vh;
         }
         .input-area{
-            /* border: 2px solid green; */
+            border: 2px solid green;
         }
         .input-area input{
             width: 100%;
             height: 50px;
         }
         .btns-area{
-            border: 2px solid yellow;
+            border: 2px solid black;
+            background-color:aqua ;
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .numbtns{
             /* border: 2px solid red; */
@@ -43,6 +46,7 @@
             border-radius:1px;
             height: 40px;
             width: 40px;
+            font-size: larger;
         }
         .actbtns{
             /* border: 2px solid red; */
@@ -51,6 +55,14 @@
             flex-direction: column;
             flex-wrap:wrap ;
             justify-content: space-around;
+        }
+        .actbtns button{
+            padding: 2px;
+            margin:1px;
+            border-radius:5px;
+            /* height: 40px; */
+            /* width: 40px; */
+            font-size: larger;
         }
     </style>
 </head>
@@ -84,5 +96,19 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let btn=document.querySelectorAll("button");
+        // console.log(btn);  
+        for(let i of btn){
+            i.onclick=function(){
+                if(i.innerText== "="){
+                    let a= document.querySelector("input").value;
+                    console.log(a);
+                }
+            }
+        }
+
+    </script>
 </body>
 </html>

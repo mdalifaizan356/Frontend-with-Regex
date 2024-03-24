@@ -3,20 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assgnment1</title>
+    <title>Assgnment2</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: red;
+        }
+        .container{
+            border: 2px solid white;
+            border-radius: 10px; 
+            background-color: white;
+            width:50%;
+            height: 80vh;
+            margin: auto;
+            position: relative;
+            top: 60px;
+            padding: 15px;
+        }
+        .colorbox{
+            border: 2px solid green;
+            width: 50%;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <select name="" id="opration">
-        <option value="Addition">Select Domain</option>
-        <option value="Addition">Addition</option>
-        <option value="Subtraction">Subtraction</option>
-        <option value="Multiplication">Multiplication</option>
-        <option value="Division">Division</option>
-    </select>
-
-    <h3 id="h" style="position: relative; top: 20px;"></h3>
-    <!-- <button id="btn"></button> -->
-
+    <div class="container">
+            <h1>Select Your Doamin</h1>
+            <select name="" id="technology">
+                <option value="React Js">React Js</option>
+                <option value="React Native">React Native</option>
+                <option value="Node">Node</option>
+                <option value="Django">Django</option>
+            </select>
+            <div class="colorbox">
+                <button id="1"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+    </div>
     <script>
         document.getElementById("opration").onclick=function(){
             // function calculate(){
@@ -42,3 +73,9 @@
     </script>
 </body>
 </html>
+
+
+<!-- <h1>Select Your Domain</h1>
+    
+
+    <h3 id="h" style="position: relative; top: 20px;"></h3> -->
