@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="usrnumber1" placeholder="Enter Number">
+    <input type="text" name="" id="usrnumber2" placeholder="Divisible by">
+    <button id="btn">CHECK</button>
+    <h1 id="result"></h1>
+
+    <script>
+    //WAP check number is divisiable for userinput number
+        document.getElementById("btn").onclick = function(){
+            let usrnumber1=document.getElementById("usrnumber1").value;
+            let usrnumber2=document.getElementById("usrnumber2").value;
+            console.log(usrnumber1);
+            console.log(usrnumber2);
+            if(usrnumber1%usrnumber2==0){
+                document.getElementById("result").innerHTML="Divisible";
+            }
+            else{
+                document.getElementById("result").innerHTML="Not Divisible";
+            }
+        }
+    </script>
+</body>
+</html>

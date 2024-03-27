@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="" differ></script> -->
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1 id="headingtext">Hello Java Script</h1>
+
+    <button id="btn">Click Here</button>
+    <button id="upper">Uppercase</button>
+    <button id="lower">Lowercase</button>
+    <button id="night">Night Mode</button>
+    <button id="date">Date</button>
+    <button id="+">Font size increase</button>
+    <button id="-">Font size decrease</button>
+
+    <p id="para"></p>
+
+
+
+    <script>
+        // console.log("Hii");
+        // document.write("Hii");
+        // alert("Hii");
+
+        // document.getElementById("btn").onclick = function(){
+        //     document.write("Hii");
+        // }
+
+        document.getElementById("upper").onclick = function(){
+            document.getElementById("headingtext").style.textTransform = "uppercase";
+        }
+
+        document.getElementById("lower").onclick = function(){
+            document.getElementById("headingtext").style.textTransform = "lowercase";
+        }
+
+        document.getElementById("night").onclick = function(){
+            document.getElementById("body").style.backgroundColor = "red";
+        }
+
+        document.getElementById("date").onclick = function(){
+            document.getElementById("para").innerHTML = new Date();
+        }
+
+        let counter=25;
+        document.getElementById("+").onclick = function(){
+            document.getElementById("headingtext").style.fontSize = counter+ "px";
+            counter++;
+        }
+
+        document.getElementById("-").onclick = function(){
+            document.getElementById("headingtext").style.fontSize = counter+ "px";
+            counter--;
+        }
+    </script>
+</body>
+</html>

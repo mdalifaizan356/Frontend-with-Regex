@@ -24,11 +24,34 @@
             top: 60px;
             padding: 15px;
         }
-        .colorbox{
-            border: 2px solid green;
+        #colorbox{
+            /* border: 2px solid green; */
             width: 50%;
             margin-top: 10px;
         }
+        #colorbox button{
+            border: 2px solid white;
+            width: 10%;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        #colorbox :nth-child(1){
+            background-color: red;
+        }
+        #colorbox :nth-child(2){
+            background-color: blue;
+        }
+        #colorbox :nth-child(3){
+            background-color: green;
+        }
+        #colorbox :nth-child(4){
+            background-color: yellow;
+        }
+        #colorbox :nth-child(5){
+            background-color: black;
+        }
+
     </style>
 </head>
 <body>
@@ -40,42 +63,43 @@
                 <option value="Node">Node</option>
                 <option value="Django">Django</option>
             </select>
-            <div class="colorbox">
-                <button id="1"></button>
+            <div id="colorbox">
+                <button></button>
                 <button></button>
                 <button></button>
                 <button></button>
                 <button></button>
             </div>
+            <div>
+                <p id="p" style="position: relative; top: 20px;"></p>
+            </div>
     </div>
     <script>
-        document.getElementById("opration").onclick=function(){
+        document.getElementById("technology").onclick=function(){
             // function calculate(){
-            let a = Number(document.getElementById("inp1").value);
-            let b = Number(document.getElementById("inp2").value);
-            let opration =document.getElementById("opration").value;
-            let result;
+            let technology =document.getElementById("technology").value;
+            if(technology === "React Js"){
+                technology="I am React Js";
+            }
+            else if(technology === "React Native"){
+                technology="I am React Native";
+            }
+            else if(technology === "Node"){
+                technology="I am Node";
+            }
+            else if(technology === "Django"){
+                technology="I am Django";
+            }
+            document.getElementById("p").innerText = technology;
+        }
 
-            if(opration === "Addition"){
-                result = a + b;
+        document.getElementById("colorbox").onclick=function(){
+            // function calculate(){
+            let colorbox =document.getElementById("technology").style;
+            if(colorbox === "React Js"){
+                technology="I am React Js";
             }
-            else if(opration === "Subtraction"){
-                result = a - b;
-            }
-            else if(opration === "Multiplication"){
-                result = a * b;
-            }
-            else if(opration === "Division"){
-                result = a % b;
-            }
-            document.getElementById("h").innerText = opration + " of your numbers: " + result;
         }
     </script>
 </body>
 </html>
-
-
-<!-- <h1>Select Your Domain</h1>
-    
-
-    <h3 id="h" style="position: relative; top: 20px;"></h3> -->

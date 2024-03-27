@@ -8,7 +8,12 @@
         liye doller sign($) k sath curly braces and curly braces k undar variable ka name likhte
         he. 
 
-    == vs ===
+    == vs ===   OR  != vs !==
+        Double equals to (==) use to check values are same or not.
+        Tripple equals to (===) use to check values and datatypes are same or not.
+
+        != vs !==: its return oposite of == vs ===
+
 
     
 */
@@ -55,5 +60,6 @@
 // == vs ===
     let num1="7"; //let num1=7; 
     let num2=7;
-    console.log(num1==num2);
-    console.log(num1===num2);
+    console.log(num1==num2);        //check only values
+    console.log(num1===num2);      //check  both values and data types
+
