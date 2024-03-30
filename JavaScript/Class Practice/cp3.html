@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="val1" placeholder="">
+    <input type="text" name="" id="val2" placeholder="">
+    <button id="btn">Swap</button>
+
+    <script>
+    //WAP to swapping value
+    document.getElementById("btn").onclick = function(){
+        let val1 = document.getElementById("val1").value;
+        let val2 = document.getElementById("val2").value;
+        // console.log(val1);
+        // console.log(val2);
+        let temp = val1;
+        val1 = document.getElementById("val1").value= document.getElementById("val2").value;
+        val2 = document.getElementById("val2").value = temp;
+    }
+    </script>
+</body>
+</html>

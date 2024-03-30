@@ -76,7 +76,7 @@
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
-                <button>4</button>
+                <button>4</button> 
                 <button>5</button>
                 <button>6</button>
                 <button>7</button>
@@ -98,17 +98,10 @@
     </div>
 
     <script>
-        let btn=document.querySelectorAll("button");
-        // console.log(btn);  
-        for(let i of btn){
-            i.onclick=function(){
-                if(i.innerText== "="){
-                    let a= document.querySelector("input").value;
-                    console.log(a);
-                }
-            }
+        let btn=document.querySelectorAll(".numbtns button");
+        for(let i in btn){
+            console.log(btn[i]);
         }
-
     </script>
 </body>
 </html>
