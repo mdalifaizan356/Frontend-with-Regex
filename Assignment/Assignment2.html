@@ -17,88 +17,129 @@
             border: 2px solid white;
             border-radius: 10px; 
             background-color: white;
+            box-shadow: 15px 15px 50px;
             width:50%;
             height: 80vh;
             margin: auto;
             position: relative;
             top: 60px;
             padding: 15px;
+            overflow: scroll;
         }
-        #colorbox{
+        .colorbox{
             /* border: 2px solid green; */
             width: 50%;
             margin-top: 10px;
         }
-        #colorbox button{
+        .colorbox button{
             border: 2px solid white;
             width: 10%;
             padding: 15px;
             margin: 10px;
             border-radius: 20px;
         }
-        #colorbox :nth-child(1){
+        .colorbox :nth-child(1){
             background-color: red;
         }
-        #colorbox :nth-child(2){
+        .colorbox :nth-child(2){
             background-color: blue;
         }
-        #colorbox :nth-child(3){
+        .colorbox :nth-child(3){
             background-color: green;
         }
-        #colorbox :nth-child(4){
+        .colorbox :nth-child(4){
             background-color: yellow;
         }
-        #colorbox :nth-child(5){
-            background-color: black;
+        .colorbox :nth-child(5){
+            background-color:pink;
+        }
+        .bottom-button{
+            position: fixed;
+            bottom: 0;
+            min-width: fit-content;
+        }
+        .bottom-button button{
+            padding: 15px;
+            background-color: rgb(120, 201, 120);
+            border-radius: 10px;
+            min-width: 50px;
         }
 
     </style>
 </head>
-<body>
+<body id="b">
     <div class="container">
             <h1>Select Your Doamin</h1>
             <select name="" id="technology">
                 <option value="React Js">React Js</option>
                 <option value="React Native">React Native</option>
-                <option value="Node">Node</option>
+                <option value="Node_js">Node js</option>
                 <option value="Django">Django</option>
             </select>
-            <div id="colorbox">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+            <div class="colorbox">
+                <button id="nth-child1"></button>
+                <button id="nth-child2"></button>
+                <button id="nth-child3"></button>
+                <button id="nth-child4"></button>
+                <button type="button" onclick="document.getElementById('b').style.backgroundColor='pink'"></button>
             </div>
             <div>
                 <p id="p" style="position: relative; top: 20px;"></p>
             </div>
+            <div class="bottom-button">
+                <button type="button" onclick="document.getElementById('p').style.textTransform='Uppercase'" >Upper case</button>
+                <button type="button" onclick="document.getElementById('p').style.textTransform='Lowercase'" >Lower Case</button>
+                <button id="+" >+</button>
+                <button id="-" >-</button>
+            </div>
     </div>
+
+
+
     <script>
         document.getElementById("technology").onclick=function(){
             // function calculate(){
             let technology =document.getElementById("technology").value;
             if(technology === "React Js"){
-                technology="I am React Js";
+                technology="React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.";
             }
             else if(technology === "React Native"){
-                technology="I am React Native";
+                technology="React Native is an open-source UI software framework created by Meta Platforms, Inc. It is used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities.";
             }
-            else if(technology === "Node"){
-                technology="I am Node";
+            else if(technology === "Node_js"){
+                technology="Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.";
             }
             else if(technology === "Django"){
-                technology="I am Django";
+                technology="Django is a free and open-source, Python-based web framework that runs on a web server. It follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit.";
             }
             document.getElementById("p").innerText = technology;
         }
 
-        document.getElementById("colorbox").onclick=function(){
-            // function calculate(){
-            let colorbox =document.getElementById("technology").style;
-            if(colorbox === "React Js"){
-                technology="I am React Js";
-            }
+
+        //doubt
+        document.getElementById("nth-child1").onclick=function(){
+            document.getElementById("b").style.backgroundColor="red";
+        }
+        document.getElementById("nth-child2").onclick=function(){
+            document.getElementById("b").style.backgroundColor="blue";
+        }
+        document.getElementById("nth-child3").onclick=function(){
+            document.getElementById("b").style.backgroundColor="green";
+        }
+        document.getElementById("nth-child4").onclick=function(){
+            document.getElementById("b").style.backgroundColor="yellow";
+        }
+
+
+        let counter=25;
+        document.getElementById("+").onclick = function(){
+            document.getElementById("p").style.fontSize = counter+ "px";
+            counter++;
+        }
+
+        document.getElementById("-").onclick = function(){
+            document.getElementById("p").style.fontSize = counter+ "px";
+            counter--;
         }
     </script>
 </body>
