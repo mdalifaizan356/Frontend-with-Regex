@@ -6,6 +6,7 @@
         Object store Key Value pairs.
         Key also called properties
         Object don't have index
+        object me 2 key same nahi hoti
 
         Jab hum { } ka use kar k object create karte he to usko Object litrals bhi bolte he
 

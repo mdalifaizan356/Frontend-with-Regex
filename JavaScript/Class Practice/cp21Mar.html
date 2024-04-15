@@ -1,0 +1,112 @@
+<!-- 
+    Learn:
+        addEventListner
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .inputField{
+            /* border: 2px solid red; */
+            width: 35%;
+            margin: auto;
+            margin-top: 90px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .inputField input{
+            padding: 10px;
+            margin: 5px;
+        }
+        .inputField button{
+            width: 25%;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(240, 139, 23);
+        }
+        .box-container{
+            /* border: 2px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            box-shadow: 0px 10px 10px black;
+            background-color: white;
+            width:20%;
+            height:120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputField">
+        <input type="text" name="" id="color" placeholder="Enter Color Name">
+        <input type="text" name="" id="boxNum" placeholder="Enter Box Number">
+        <button id="btn">Fill Color</button>
+        <button id="btn2">Reset</button>
+    </div>
+    <div class="box-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+
+    <script>
+            //Set
+            let btn = document.getElementById("btn");
+            btn.addEventListener("click",function(Event){
+                let colorName=document.getElementById("color").value;
+                let boxNumber=document.getElementById("boxNum").value;
+
+                let editDiv = document.querySelectorAll(".box-container .box");
+                    // console.log(div);
+                    for(let i in editDiv){
+                        if(i==boxNumber-1){
+                            // console.log(div[i]);
+                            editDiv[i].style.backgroundColor=colorName;
+                        }
+                    }
+            });
+            
+            //Reset
+            btn2.addEventListener("click",function(Event){
+                let colorName=document.getElementById("color").value="";
+                let boxNumber=document.getElementById("boxNum").value="";
+
+                let editDiv = document.querySelectorAll(".box-container .box");
+                    // console.log(div);
+                    for(let i in editDiv){
+                        editDiv[i].style.backgroundColor=colorName;
+                    }
+            });
+
+    </script>
+</body>
+</html>
