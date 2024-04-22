@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ioarea{
+            /* border: 2px solid red; */
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        #text{
+            /* border: 2px solid green; */
+            width: 48%;
+            font-size: larger;
+
+        }
+        #para{
+            border: 1px solid gray;
+            font-size: larger;
+            width: 48%;
+            overflow-y: scroll;
+            overflow-x: scroll;
+        }
+
+        #para p{
+            font-size: larger;
+            /* overflow-y: scroll;
+            overflow-x: scroll; */
+        }
+
+        #totalLetters{
+            margin-top:50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="ioarea">
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <p id="para"></p>
+    </div>
+    <h1 id="totalLetters"></h1>
+
+    <script>
+        document.getElementById("text").oninput=function(event){
+            // console.log(event.target.value);
+            document.getElementById("para").innerText=event.target.value;
+            let len = event.target.value;
+            document.getElementById("totalLetters").innerText=`Total Letters ${len.length}`;
+            // document.getElementById("totalLetters").innerText="Total Letters "+ len.length;
+        }
+    </script>
+</body>
+</html>

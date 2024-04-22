@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <textarea name="" id="text" cols="30" rows="10"></textarea>
+        <button id="submit">Submit</button>
+    </div>
+    <div>
+        <p id="para"></p>
+    </div>
+
+    <script>
+        document.getElementById("submit").onclick=function(){
+            let text = document.getElementById("text").value;
+            document.getElementById("para").innerText=text;
+        }
+    </script>
+</body>
+</html>
