@@ -1,4 +1,4 @@
-import '../style/HeadNav.css'
+import './HeadNav.css'
 
 function HeadNav() {
   return (

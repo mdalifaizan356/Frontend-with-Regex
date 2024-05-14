@@ -1,0 +1,28 @@
+.LetestPro{
+    border: 2px solid red;
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+    margin-top: 5%;   
+}
+.heading{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_Container{
+    border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid green;
+    width: 32%;
+    height: 35vh;
+    margin: 5px 0px 5px 0px;
+
+}
