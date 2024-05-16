@@ -1,12 +1,11 @@
 import './LetestPro.css'
 import img1 from '../../img/slide_01.jpg'
-import {Link} from 
 
 function LetestPro() {
   return (
     <>
       <div className='LetestPro'>
-        <div className='heading'>, 
+        <div className='heading'>
             <h2>Letest Product</h2>
             <a href="">View All Product</a>
         </div>
@@ -30,9 +29,6 @@ function LetestPro() {
               </div>
             </div>
           </div>
-
-
-
           <div className="card">
           <div className='imgContainer'>
               <img src={img1} alt="" />
