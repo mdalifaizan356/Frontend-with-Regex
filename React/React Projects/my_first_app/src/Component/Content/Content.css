@@ -1,7 +1,8 @@
 .Content{
-    /* border: 2px solipd red; */
+    border: 2px solid black;
     width: 79%;
     height: 100vh;
     background-color: blue;
     margin-top: 0.20%;
+    text-align: center;
 }       

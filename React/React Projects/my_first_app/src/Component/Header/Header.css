@@ -1,6 +1,25 @@
 .Header-Container{
-    /* border: 2px solipd red; */
+    /* border: 2px solid black; */
     width: 100%;
     height: 20vh;
     background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headnav{
+    /* border: 2px solid green; */
+    width: 70%;
+}
+.headnav ul{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.headnav a{
+    text-decoration: none;
+    color: black;
+    
 }
