@@ -1,0 +1,9 @@
+npm create vite@latest projectName
+select=>React
+select=>Javascript
+npm i
+npm run dev
+
+
+Folder Structure
+index.html is run first
