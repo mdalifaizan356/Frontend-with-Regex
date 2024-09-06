@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-// import Home from './component/Home'
+import Home from './component/Home'
 import Header from './component/Header'
 import About from './component/About'
 import Demo from './component/Demo'
@@ -9,14 +9,15 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path='/' element = {<Home/>} />
+          <Route path='/about' element = {<About/>} />
+          <Route path='/contact' element = {<Contact/>} />
+          <Route path='/demo' element = {<Demo/>} />
         </Routes>
       </BrowserRouter>
     </>
