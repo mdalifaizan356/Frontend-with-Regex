@@ -9,4 +9,14 @@ Folder Structure
 index.html is run first
 
 react-router-dom
-    
+    BrowserRouter and Routes k undar wo component aate he jo har page pr show karwane he.
+    Route k andr path or element dalte he.
+
+    Link:
+
+    Hooks: 16.8 with function component
+    use property k sath use hote he like 
+    useNavigate: react router dom se lete he isko, iska use ek component se dusre component se bhejne k liye 
+
+    useState:react se lete he isko, data ko update or change karne k liye
+
