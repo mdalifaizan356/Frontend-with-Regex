@@ -1,8 +1,11 @@
 import React from 'react'
+import Counter from '../component/counter'
 
 const Home = () => {
   return (
-    <div>This is Home Page</div>
+    <>
+      <Counter/>
+    </>
   )
 }
 

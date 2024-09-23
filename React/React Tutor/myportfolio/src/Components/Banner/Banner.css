@@ -1,0 +1,7 @@
+.bannerContainer{
+    border: 2px solid red;
+    background-image: url(../../../public/images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
